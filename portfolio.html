@@ -25,9 +25,23 @@
                     </ul>
                 </nav>           
                 <ul class="nav-contact list">
-                    <li class="nav-contact-item"><a href="mailto:info@devstudio.com" class="nav-contact-mail link">info@devstudio.com</a> </li>                
-                    <li class="nav-contact-item"><a href="tel:+380961111111" class="nav-contact-phone link">+38 096 111 11 11</a> </li>
-                </ul>
+                    <div class="contact-wrapper">
+                        <a href="mailto:info@devstudio.com">
+                            <svg class="contact-icon email" width="16" height="12">
+                                <use href="./images/icons.svg#email"></use>
+                            </svg>
+                        </a>
+                        <li class="nav-contact-item"><a href="mailto:info@devstudio.com" class="nav-contact-mail link">info@devstudio.com</a> </li> 
+                    </div>
+                    <div class="contact-wrapper">
+                        <a href="tel:+380961111111">
+                            <svg class="contact-icon" width="10" height="16">
+                                <use href="./images/icons.svg#phone"></use>
+                            </svg>
+                        </a>
+                        <li class="nav-contact-item"><a href="tel:+380961111111" class="nav-contact-phone link">+38 096 111 11 11</a> </li>
+                    </div>                               
+                </ul>   
             </div>         
                 
                 
@@ -37,7 +51,7 @@
                 <div class="container">
                     <h1 class="gallery-title" hidden>Галерея</h1>
                     <ul class="gallery-list list">
-                        <li class="gallery-link"><button type="button" class="gallery-button">Все</button></li>
+                        <li class="gallery-link"><button type="button" class="gallery-button">Усі</button></li>
                         <li class="gallery-link"><button type="button" class="gallery-button">Веб-сайти</button></li>
                         <li class="gallery-link"><button type="button" class="gallery-button">Додатки</button></li>
                         <li class="gallery-link"><button type="button" class="gallery-button">Дизайн</button></li>
@@ -122,24 +136,60 @@
         </main>
         <footer class="footer">
             <div class="container">
-                <div class="logo-wrapper">
-                    <a lang="en" href="/" class="logo link">  Web<span class="part-logo">Studio</span></a>
+                <div class="footer-contacts">
+                    <div class="logo-wrapper">
+                        <a lang="en" href="/" class="logo footer-logo link"> Web<span class="part-logo">Studio</span></a>
+                    </div>  
+                    <address class="address">
+                        <ul class="address-list list">
+                            <li class="address-item">
+                                <a class="address-link location link" href="https://www.google.com/maps/d/embed?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ehbc=2E312F" rel="noopener noreferrer" target="_blank">м. Київ, пр-т Лесі Українки, 26
+                                </a>
+                            </li>
+                            <li class="address-item">
+                                <a class="address-link link" href="mailto:info@example.com">info@example.com</a>
+                            </li> 
+                            <li class="address-item">  
+                                <a class="address-link link" href="tel:+380991111111">+38 099 111 11 11</a>                   
+                            </li>
+                        </ul>                         
+                    </address>
                 </div>
                 
-                <address class="address">
-                    <ul class="address-list list">
-                        <li class="address-item">
-                            <a class="address-link location link" href="https://www.google.com/maps/d/embed?mid=10uSM3H-mIU3GznYo2szRIEphczw&hl=en_US&ehbc=2E312F" rel="noopener noreferrer" target="_blank">м. Київ, пр-т Лесі Українки, 26
+                <div class="footer-socials">
+                    <h2 class="socials-title">приєднуйтесь</h2>
+                    <ul class="social-list list">
+                        <li class="social-item">
+                            <a class="social-link instagram" href="">
+                                <svg class="social-icon" width="20" height="20">
+                                    <use href="./images/icons.svg#instagram"></use>
+                                </svg>
                             </a>
                         </li>
-                        <li class="address-item">
-                            <a class="address-link link" href="mailto:info@example.com">info@example.com</a>
-                        </li> 
-                        <li class="address-item">  
-                            <a class="address-link link" href="tel:+380991111111">+38 099 111 11 11</a>                   
+                        <li>
+                            <a class="social-link twitter" href="">
+                                <svg class="social-icon" width="20" height="20">
+                                    <use href="./images/icons.svg#twitter"></use>
+                                </svg>
+                            </a>
                         </li>
-                    </ul>                         
-                </address>
+                        <li>
+                            <a class="social-link facebook" href="">
+                                <svg class="social-icon" width="20" height="20">
+                                    <use href="./images/icons.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-link linkedin" href="">
+                                <svg class="social-icon" width="20" height="20">
+                                    <use href="./images/icons.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
             </div>           
         </footer>
     </body>
